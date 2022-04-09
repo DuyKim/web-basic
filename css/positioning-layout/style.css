@@ -1,0 +1,69 @@
+*, *::after, *::before { box-sizing: border-box;}
+
+body {
+    width: 500px;
+    margin: 0 auto;
+}
+
+p {
+    background-color: aqua;
+    border: 3px solid blue;
+    padding: 10px;
+    margin: 10px;
+}
+
+span {
+    background-color: red;
+    border: 1px solid black;
+}
+
+.positioned {
+    position: relative;
+    background-color: yellow;
+    top: 30px;
+    left: 30px;
+}
+
+.positioned-absolute {
+    position: absolute;
+    background-color: yellow;
+    top: 30px;
+    left: 30px;
+}
+
+/* initial containing block */
+/* 
+    layout and the containing block
+    url: https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block#effects_of_the_containing_block
+*/
+.ancector {
+    position: relative;
+}
+
+.ancector p:nth-of-type(1) {
+    position: absolute;
+    background-color: lime;
+    top: 10px;
+    right: 10px;
+}
+
+.fixed h1 {
+    position: fixed;
+    background-color: white; 
+    padding: 10px;
+    width: 500px;
+    top: 0px;
+    z-index: 2;
+    margin-block-start: 0px;
+}
+
+.sticky dt {
+    position: sticky;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: black;
+    margin: 1rem 0;
+    padding: 10px;
+    z-index: 3;
+}

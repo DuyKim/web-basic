@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Responsive images with client hint -->
+    <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Responsive Images</title>
+</head>
+
+<body>
+    <picture>
+        <source srcset="path/to/image.svg" type="image/svg+xml">
+        <img src="path/to/fallback.png" alt="Image description">
+    </picture>
+
+    <picture>
+        <source srcset="image/svg+xml" type="image/svg+xml">
+        <img src="path/to/logo-1x.png" alt="Logo description" 
+                srcset="path/to/logo-2x.png 2x,
+                        path/to/logo-3x.png 3x">
+    </picture>
+
+    <picture>
+        <source type="image/svg+xml" srcset="path/to/banner.svg">
+        <img 
+            src="banner-default-fallback.jpg" 
+            alt="Banner description"
+            srcset="banner-300.jpg 300w,
+                    banner-400.jpg 400w,
+                    banner-700.jpb 700w,
+                    banner-1200.jpg 1200w,
+                    banner-1600.jpg 1600w,
+                    banner-2000.jpg 2000w"
+            sizes="(min-width: 640px) 80vw, 100vw">
+
+    </picture>
+
+    <picture>
+        <source media="(min-width: 50em)"
+                sizes="50vw" ?? needs more research
+                srcset="/image/thing">
+        <img src="/imgae/thing-crop" alt="Image fallback" sizes="100vw">
+    </picture>
+
+    <img src="cat.jpg" alt="cat"
+        srcset="cat-160.jpg 160w,
+                cat-320.jpg 320w,
+                cat-640.jpg 640w,
+                cat-1280.jpg 1280w"
+        sizes="(max-width: 480px) 100vw,
+                (max-width: 900px) 33vw,
+                254px">
+
+</body>
+
+</html>

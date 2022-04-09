@@ -1,0 +1,59 @@
+*, *::after, *::before { box-sizing: border-box; }
+
+body {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    font: 0.9rem/1.2 Arial, Helvetica, sans-serif;
+}
+
+.wrapper,
+.wrapper1,
+.wrapper2 {
+    background-color: rgb(79, 185, 227);
+    padding: 10px;
+    color: #fff;
+}
+
+/* clearfix hack */
+.wrapper::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+
+.box,
+.float-right {
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+    background-color: rgb(207, 232, 220);
+    padding: 1rem;
+}
+
+/* .special {
+    background-color: rgb(79, 185, 227);
+    padding: 10px;
+    color: #fff;
+} */
+
+.cleared {
+    clear: left;
+}
+
+/* Block formatting context */
+.wrapper1 {
+    overflow: auto;
+}
+.float-right {
+    float: right;
+}
+
+/*using display: flow-root */
+.wrapper2 {
+    display: flow-root;
+}

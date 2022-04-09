@@ -1,0 +1,117 @@
+/* 
+and logic in media queries
+    @media screen and (min-width: 600px) and screen and (orientation: landscape) {}
+
+or logic
+    @media screen and (min-width: 600px),screen and (orientation: landscape) {}
+
+not logic
+    @media not all and (orientation: landscape) {}
+
+*/
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    width: 90%;
+    margin: 2em auto;
+    font: 1em/1.3 Arial, Helvetica, sans-serif;
+}
+
+a:link,
+a:visited {
+    color: #333;
+}
+
+nav ul,
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav a:link,
+nav a:visited {
+    background-color: rgba(207, 232, 220, 0.2);
+    border: 2px solid rgb(79, 285, 227);
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: rgba(207, 232, 220, 0.7);
+}
+
+.related {
+    background-color: rgba(79, 185, 227, 0.3);
+    border: 1px solid rgb(79, 285, 227);
+    padding: 10px;
+}
+
+.sidebar {
+    background-color: rgba(207, 232, 220, 0.5);
+    padding: 10px;
+    counter-reset: li;
+}
+
+.sidebar ul li::after {
+    counter-increment: li;
+    content: " " counter(li);
+}
+
+article {
+    margin-block-end: 1em;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 8px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 40em) {
+    article {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 20px;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        flex: 1;
+    }
+}
+
+@media screen and (min-width: 70em) {
+   main {
+       display: grid;
+       grid-template-columns: 3fr 1fr;
+       gap: 20px;
+   } 
+   article {
+       margin-block-end: 0;
+   }
+
+   footer {
+       border-top: 1px solid #ccc;
+       margin-block-start: 2em;
+   }
+}
+
+
+
+
+
+
+

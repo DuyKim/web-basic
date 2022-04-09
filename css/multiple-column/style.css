@@ -1,0 +1,34 @@
+*, *::after, *::before { box-sizing: border-box; }
+
+.container1 {
+    /* column-count: 3; */
+    column-gap: 20px;
+    column-rule: 4px dotted rgb(79, 185, 227);
+    column-width: 200px;
+}
+
+.spanner {
+    /* column-span: all; */
+    background-color: aqua;
+}
+
+.container2 {
+    margin-block-start: 20px;
+    column-width: 250px;
+    column-gap: 20px;
+    counter-reset: h2;
+}
+
+.card {
+    background-color: rgb(207, 232, 220);
+    break-inside: avoid;
+    page-break-inside: avoid;
+    border: 2px solid rgb(29, 185, 227);
+    padding: 10px;
+    margin: 0 0 1rem 0;
+}
+
+.card h2::after {
+    counter-increment: h2;
+    content: " " counter(h2);
+}

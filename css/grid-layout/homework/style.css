@@ -1,0 +1,45 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    font: 0.9rem/1.5 Helvetica, Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(200px, min-content);
+    gap: 20px;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 200px min-content;
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px;
+    margin: 0;
+    list-style: none;
+}
+
+.tags > * {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 2px 5px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 0.8rem; 
+}

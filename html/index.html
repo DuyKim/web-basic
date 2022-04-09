@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Le Duy Kim">
+    <meta name="description"
+        content="This webpage is used to learning the fundamental of web tecnologies includes HTML, CSS, JAVASCRIPT.">
+    <meta name="og:title" content="Web Fundamental">
+    <meta name="twitter:title" content="Web Fundamental">
+    <link rel="icon" href="https://developer.mozilla.org/static/img/favicon32.png">
+    <link rel="stylesheet" href="./index.css">
+    <title>Web Fundamental</title>
+
+</head>
+
+<body>
+    <header>Header</header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our team</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <form>
+            <input type="search" name="q" placeholder="Search query">
+            <input type="submit" value="Go">
+        </form>
+    </nav>
+
+    <main>
+        <article>
+
+            <h2>Quick hummus recipe</h2>
+            <p>
+                This recipe makes quick, tasty hummus, with no messing. It has been adapted from a number of different
+                recipes that I have read over the years.
+            </p>
+            <p>
+                Hummus is a delicious thick paste used heavily in Greek and Middle Eastern dishes. It is very tasty with
+                salad, grilled meats and pitta breads.
+            </p>
+
+
+
+            <h2>Ingredients</h2>
+            <ul>
+                <li>1 can (400g) of chick peas (garbanzo beans)</li>
+                <li>175g of tahini</li>
+                <li>6 sundried tomatoes</li>
+                <li>Half a red pepper</li>
+                <li>A pinch of cayenne pepper</li>
+                <li>1 clove of garlic</li>
+                <li>A dash of olive oil</li>
+            </ul>
+
+            <h2>Instructions</h2>
+            <ul>
+                <li> Remove the skin from the garlic, and chop coarsely</li>
+                <li>Remove all the seeds and stalk from the pepper, and chop coarsely</li>
+                <li> all the ingredients into a food processor</li>
+                <li>Process all the ingredients into a paste</li>
+                <li>If you want a coarse "chunky" hummus, process it for a short time</li>
+                <li>If you want a smooth hummus, process it for a longer time</li>
+            </ul>
+            <p>
+                For a different flavor, you could try blending in a small measure of lemon and coriander, chili pepper,
+                lime and
+                chipotle, harissa and mint, or spinach and feta cheese. Experiment and see what works for you.
+            </p>
+
+            <h2>Storage</h2>
+            <p>Refrigerate the finished hummus in a sealed container. You should be able to use it for about a week
+                after you've made it. If it starts to become fizzy, you should definitely discard it.
+            </p>
+            <p>Hummus is suitable for freezing; you should thaw it and use it within a couple of months.</p>
+
+            <h2>Important notice</h2>
+            <p>
+                On <strong>sunday january 9th 2010</strong>, a gang of goths were
+                spotted stealing <em>several </em><strong>garden gnomes</strong> from a
+                shopping center in downtown <strong>Milwaukee</strong>. They were
+                all wearing green jumpsuits and silly hats, and
+                seemed to be having a whale of a time. If anyone
+                has <strong>any</strong> information about this incident, please
+                contact the police <strong>now</strong>.
+            </p>
+
+        </article>
+
+        <section>
+            <h2>Line break and horizontal rules</h2>
+
+            <p>There once was a man named O'Dell<br>
+                Who loved to write HTML<br>
+                But his structure was bad, his semantics were sad<br>
+                and his markup didn't read very well.
+            </p>
+
+            <p>Ron was backed into a corner by the marauding netherbeasts. Scared, but determined to protect his
+                friends, he raised his wand and prepared to do battle, hoping that his distress call had made it
+                through.</p>
+            <hr>
+            <p>Meanwhile, Harry was sitting at home, starting at his royalty statement and pondering when the next spin
+                off series would come out, when an enchanted distress letter flew through his window and landed n his
+                lap. He read it hazily and sighed; "better get back to work then", he mused.</p>
+        </section>
+
+        <div class="shopping-cart">
+            <h2>Shopping cart</h2>
+            <ul>
+                <li>
+                    <p><a href=""><strong>Silver earrings</strong></a>: $99.95</p>
+                    <img src="" alt="" srcset="">
+                </li>
+            </ul>
+            <p>Total cost: $237.89</p>
+        </div>
+
+        <section>
+            <table>
+                <caption>Dogs Table</caption>
+                <thead>
+                    <td>&nbsp;</td>
+                    <th scope="col">Knocky</th>
+                    <th scope="col">Flor</th>
+                    <th scope="col">Ella</th>
+                    <th scope="col">Juan</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Breed</th>
+                        <td>Jack Russell</td>
+                        <td>Poodle</td>
+                        <td>Streetdog</td>
+                        <td>Cocker Spaniel</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Age</th>
+                        <td>16</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Eating Habbits</th>
+                        <td>Eats everyone's leftovers</td>
+                        <td>Nibbles at food</td>
+                        <td>Hearty eater</td>
+                        <td>Will eat till he explodes</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <caption>Allowing cells to span multiple rows and columns</caption>
+                <tr>
+                    <th colspan="2">Animals</th>
+                </tr>
+                <tr>
+                    <th colspan="2">Hippopotamus</th>
+                </tr>
+                <tr>
+                    <th rowspan="2">Horse</th>
+                    <td>Mare</td>
+                </tr>
+                <tr>
+                    <td>Stallion</td>
+                </tr>
+                <tr>
+                    <th colspan="2">Crocodile</th>
+                </tr>
+                <tr>
+                    <th rowspan="2">Chicken</th>
+                    <td>Hen</td>
+                </tr>
+                <tr>
+                    <td>Rooster</td>
+                </tr>
+            </table>
+
+            <table>
+                <caption>School timetable</caption>
+                <colgroup>
+                    <col span="2">
+                    <col style="background-color:#97DB9A!important;">
+                    <col style="width:42px;">
+                    <col style="background-color:#97DB9A;">
+                    <col style="background-color:#DCC48E; border:4px solid #C1437A;">
+                    <col span="2" style="width:42px;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <th>Mon</th>
+                        <th>Tues</th>
+                        <th>Wed</th>
+                        <th>Thurs</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1st period</th>
+                        <td>English</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>German</td>
+                        <td>Dutch</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>2nd period</th>
+                        <td>English</td>
+                        <td>English</td>
+                        <td>&nbsp;</td>
+                        <td>German</td>
+                        <td>Dutch</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>3rd period</th>
+                        <td>&nbsp;</td>
+                        <td>German</td>
+                        <td>&nbsp;</td>
+                        <td>German</td>
+                        <td>Dutch</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>4th period</th>
+                        <td>&nbsp;</td>
+                        <td>English</td>
+                        <td>&nbsp;</td>
+                        <td>English</td>
+                        <td>Dutch</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>My spending record</h2>
+
+            <table>
+                <caption>How I chose to spend my money</caption>
+                <thead>
+                    <th>Purchase</th>
+                    <th>Location</th>
+                    <th>Date</th>
+                    <th>Evaluation</th>
+                    <th>Cost (€)</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th>Haircut</th>
+                        <td>Hairdresser</td>
+                        <td>12/09</td>
+                        <td>Great idea</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <th>Lasagna</th>
+                        <td>Restaurant</td>
+                        <td>12/09</td>
+                        <td>Regrets</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <th>Shoes</th>
+                        <td>Shoeshop</td>
+                        <td>13/09</td>
+                        <td>Big regrets</td>
+                        <td>65</td>
+                    </tr>
+                    <tr>
+                        <th>Toothpaste</th>
+                        <td>Supermarket</td>
+                        <td>13/09</td>
+                        <td>Good</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="4">SUM</th>
+                        <td>118</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section>
+            <table>
+                <caption><b>Items Sold August 2016</b></caption>
+                <thead>
+                    <tr>
+                        <td rowspan="2" colspan="2">&nbsp;</td>
+                        <th scope="colgroup" colspan="3">Clothes</th>
+                        <th scope="colgroup" colspan="2">Accessories</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Trousers</th>
+                        <th scope="col">Skirts</th>
+                        <th scope="col">Dresses</th>
+                        <th scope="col">Bracelets</th>
+                        <th scope="col">Rings</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="rowgroup" rowspan="3">Belgium</th>
+                        <th scope="row">Antwerp</th>
+                        <td>56</td>
+                        <td>22</td>
+                        <td>43</td>
+                        <td>72</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Gent</th>
+                        <td>46</td>
+                        <td>18</td>
+                        <td>50</td>
+                        <td>61</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Brusseis</th>
+                        <td>51</td>
+                        <td>27</td>
+                        <td>38</td>
+                        <td>69</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <th scope="rowgroup" rowspan="2">The Netherbeasts</th>
+                        <th scope="row">AmsterDam</th>
+                        <td>89</td>
+                        <td>34</td>
+                        <td>69</td>
+                        <td>85</td>
+                        <td>38</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Utrecht</th>
+                        <td>80</td>
+                        <td>12</td>
+                        <td>43</td>
+                        <td>36</td>
+                        <td>19</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <table>
+                <caption>Data about the planets of our solar system (Planetary facts taken from Nasa's Planetary Fact
+                    Sheet - Metric).</caption>
+                <colgroup>
+                    <col span="2">
+                    <col style="border: 2px solid black !important">
+                    <col span="9">
+                </colgroup>
+                <thead>
+                    <td colspan="2">&nbsp;</td>
+                    <th scope="col">Name</th>
+                    <th scope="col">Mass (10<sup>24</sup>kg)</th>
+                    <th scope="col">Diameter (km)</th>
+                    <th scope="col">Density (kg/m<sup>3</sup>)</th>
+                    <th scope="col">Gravity (m/s<sup>2</sup>)</th>
+                    <th scope="col">Length of day (hours)</th>
+                    <th scope="col">Distance from Sun (10<sup>6</sup>km)</th>
+                    <th scope="col">Mean temperature (<sup>0</sup>C)</th>
+                    <th scope="col">Number of moons</th>
+                    <th scope="col">Notes</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th rowspan="4" colspan="2" scope="rowgroup">Terrestrial planets</th>
+                        <th scope="row">Mercury</th>
+                        <td>0.330</td>
+                        <td>4.879</td>
+                        <td>5427</td>
+                        <td>3.7</td>
+                        <td>4222.6</td>
+                        <td>57.9</td>
+                        <td>167</td>
+                        <td>0</td>
+                        <td>Closest to the Sun</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Venus</th>
+                        <td>4.87</td>
+                        <td>4.87</td>
+                        <td>4.87</td>
+                        <td>4.87</td>
+                        <td>4.87</td>
+                        <td>4.87</td>
+                        <td>4.87</td>
+                        <td>4.87</td>
+                        <td>4.87</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Venus</th>
+                        <td>4.87</td>
+                        <td>4.87</td>
+                        <td>4.87</td>
+                        <td>4.87</td>
+                        <td>4.87</td>
+                        <td>4.87</td>
+                        <td>4.87</td>
+                        <td>4.87</td>
+                        <td>4.87</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Venus</th>
+                        <td>4.87</td>
+                        <td>4.87</td>
+                        <td>4.87</td>
+                        <td>4.87</td>
+                        <td>4.87</td>
+                        <td>4.87</td>
+                        <td>4.87</td>
+                        <td>4.87</td>
+                        <td>4.87</td>
+                    </tr>
+                    <tr>
+                        <th scope="rowgroup" rowspan="4">Jovianplanets</th>
+                        <th scope="row" rowspan="2">Gas giants</th>
+                        <th scope="row">Jupiter</th>
+                        <td>1898</td>
+                        <td>1898</td>
+                        <td>1898</td>
+                        <td>1898</td>
+                        <td>1898</td>
+                        <td>1898</td>
+                        <td>1898</td>
+                        <td>1898</td>
+                        <td>1898</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Jupiter</th>
+                        <td>1898</td>
+                        <td>1898</td>
+                        <td>1898</td>
+                        <td>1898</td>
+                        <td>1898</td>
+                        <td>1898</td>
+                        <td>1898</td>
+                        <td>1898</td>
+                        <td>1898</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="2">Ice giants</th>
+                        <th scope="row">Jupiter</th>
+                        <td>1898</td>
+                        <td>1898</td>
+                        <td>1898</td>
+                        <td>1898</td>
+                        <td>1898</td>
+                        <td>1898</td>
+                        <td>1898</td>
+                        <td>1898</td>
+                        <td>1898</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Jupiter</th>
+                        <td>1898</td>
+                        <td>1898</td>
+                        <td>1898</td>
+                        <td>1898</td>
+                        <td>1898</td>
+                        <td>1898</td>
+                        <td>1898</td>
+                        <td>1898</td>
+                        <td>1898</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2" scope="row">Terrestrial planets</th>
+                        <th scope="row">Mercury</th>
+                        <td>0.330</td>
+                        <td>4.879</td>
+                        <td>5427</td>
+                        <td>3.7</td>
+                        <td>4222.6</td>
+                        <td>57.9</td>
+                        <td>167</td>
+                        <td>0</td>
+                        <td>Closest to the Sun</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <section>
+            <h2>Responsive Images</h2>
+            <figure>
+                <img src="https://mdn.github.io/learning-area/html/multimedia-and-embedding/responsive-images/elva-800w.jpg"
+                    alt="The head and torso of a dinosaur skeleton; it has a large head with long sharp teeth" srcset=""
+                    >
+                <figcaption>A T-Rex on display in the MU Museum.</figcaption>
+            </figure>
+            <!-- Resolution switching: different sizes 
+                <img src="elva-fairy-800w.jpb" 
+                        alt="Elva dressed as a fairy" 
+                        srcset="elva-fairy-800w.jpg 800w,
+                                elva-fairy-480w.jpg 480w"
+                        sizes="(max-width: 600px) 480px,
+                                800px" >
+            --Resolution switching: the same size, different resolutions
+                <img src="elva-fairy-320w.jpg" 
+                        alt="Elva dressed as a fairy" 
+                        srcset="elva-fairy-320w.jpg,
+                                elva-fairy-480w.jpg 1.5x,
+                                elva-fairy-640w.jpg 2x"
+                                width="320px">
+                Art direction
+                <picture>
+                    <source media="(max-width: 799px)" srcset="elva-480-close-potrait.jpg">
+                    <source media="(min-width: 800px)" srcset="elva-800w.jpg" >
+                    <img src="elva-800w.jpg" alt="Elva dressed as a fairy">
+                </picture>
+
+                Use modern image formats boldly
+                <picture>
+                    <source type="image/svg+xml" srcset="pyramid.svg">
+                    <source type="image/webp" srcset="pyramid.webp" >
+                    <img src="pyramid.png" alt="Elva dressed as a fairy">
+                </picture> -->
+
+        </section>
+
+        <aside>
+            <h2>Related</h2>
+            <ul>
+                <li><a hreff="#">Oh I do like to be beside the seaside</a></li>
+                <li><a hreff="#">Oh I do like to be beside the sea</a></li>
+                <li><a hreff="#">Although in the North of England</a></li>
+                <li><a hreff="#">It never stops raining</a></li>
+                <li><a hreff="#">Oh well...</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Copyright 2050 by nobody. All rights reversed.</p>
+    </footer>
+
+    <script type="text/javascript" src="./index.js" defer></script>
+</body>
+
+</html>
